@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Yaldevi', sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
+    padding: 20px;
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background-color: #fca311;
+    height: 30px;
+    width: 60px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+}
+
+button span {
+    background-color: #14213d;
+    display: block;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background-color 0.7s, margin-left 0.7s;
+}
+
+.active {
+    background-color: #14213d;
+}
+
+.active span {
+    background-color: #fca311;
+    margin-left: 31px;
+}
+
+.prices {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.basic {
+    width: 60%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+#header {
+    border: none;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.basic h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #14213d;
+}
+
+.basic p {
+    border-block-end: 1px solid #14213d;
+    padding: 10px;
+}
+
+.learn-more {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.learn-more:hover {
+    background-color: #14213d;
+    color: #ffffff;
+}
+
+.professional {
+    width: 60%;
+    max-width: 600px;
+    background-color: #fca311;
+    padding: 40px;
+    color: #ffffff;
+}
+
+#header2 {
+    border: none;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.professional,
+.basic,
+.master {
+    border-radius: 5px;
+}
+
+.professional h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.professional p {
+    border-block-end: 1px solid #ffffff;
+    padding: 10px;
+}
+
+.learn-more2 {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #14213d;
+    color: #ffffff;
+    height: 50px;
+}
+
+.learn-more2:hover {
+     background-color: #ffffff;
+     color: black;
+}
+
+.master {
+    width: 60%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+#header3 {
+    border: none;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.master h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #14213d;
+}
+
+.master p {
+    border-block-end: 1px solid #14213d;
+    padding: 10px;
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: 10px;
+        width: 100%;
+    }
+    .prices {
+        flex-direction: row;
+        gap: 0;
+        width: 80%;
+    }
+
+    .professional {
+         border-block: 15px solid #fca311;
+    }
+}

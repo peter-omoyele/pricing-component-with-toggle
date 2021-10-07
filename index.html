@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Component With Toggle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header-text">
+        <h1>Our Pricing</h1>
+    </div>
+
+    <div class="toggle">
+        <p>Monthly</p>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        <p>Annually</p>
+    </div>
+
+    <section class="prices">
+
+        <div class="basic">
+            <p id="header">Basic</p>
+            <h1>$19.99</h1>
+            <p>500 GB Storage</p>
+            <p>2 Users Allowed</p>
+            <p>Send up to 3 GB</p>
+            <button class="learn-more" type="button">LEARN MORE</button>
+        </div>
+
+        <div class="professional">
+            <p id="header2">Professional</p>
+            <h1>$24.99</h1>
+            <p>1 TB Storage</p>
+            <p>5 Users Allowed</p>
+            <p>Send up to 10 GB</p>
+            <button class="learn-more2" type="button">LEARN MORE</button>
+        </div>
+
+        <div class="master">
+            <p id="header3">Master</p>
+            <h1>$39.99</h1>
+            <p>2 tB Storage</p>
+            <p>10 Users Allowed</p>
+            <p>Send up to 20 GB</p>
+            <button class="learn-more" type="button">LEARN MORE</button>
+        </div>
+
+    </section>
+
+    <script>
+        var btn = document.getElementById("btn");
+
+        function toggleBtn(){
+            btn.classList.toggle("active")
+        }
+    </script>
+    
+</body>
+</html>
