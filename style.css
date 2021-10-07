@@ -39,6 +39,8 @@ body {
     position: relative;
     cursor: pointer;
     transition: background-color 0.7s;
+    border: none;
+    outline: none;
 }
 
 .toggler::before {
