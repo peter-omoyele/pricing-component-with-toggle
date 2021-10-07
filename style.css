@@ -68,7 +68,6 @@ button span {
 }
 
 .basic {
-    width: 60%;
     max-width: 600px;
     background-color: #ffffff;
     padding: 40px;
@@ -103,7 +102,6 @@ button span {
 }
 
 .professional {
-    width: 60%;
     max-width: 600px;
     background-color: #fca311;
     padding: 40px;
@@ -120,6 +118,7 @@ button span {
 .basic,
 .master {
     border-radius: 5px;
+    width: 100%;
 }
 
 .professional h1 {
@@ -147,7 +146,6 @@ button span {
 }
 
 .master {
-    width: 60%;
     max-width: 600px;
     background-color: #ffffff;
     padding: 40px;
